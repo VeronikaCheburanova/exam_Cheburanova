@@ -28,6 +28,12 @@ jar {
     attributes 'Main-Class': 'org.jetbrains.java.decompiler.main.decompiler.ConsoleDecompiler'
   }
 }
+
+test {
+    outputs.upToDateWhen { false }
+}
+
+
 pmd {
     toolVersion = "6.8.0"
     ignoreFailures = true
